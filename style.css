@@ -1,19 +1,53 @@
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manrope:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
 
-.button {
-    width: 
+body {
+    background-color: #0E4D64;
+    color: #0A2F51;
+    font-family: 'Manrope', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 60px;
+    color: #D36214;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.slider {
+    width: 1200px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .article-preview {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
+    align-items: flex-start;
     border-radius: 10px;
     overflow: hidden;
+    background-color: #DEEDCF;
+    -webkit-box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
 }
 
 .article-image {
-    width: 300px;
+    height: 200px;
     margin-right: 25px;
 }
 
@@ -24,14 +58,15 @@
 .article-btn {
     align-self: end;
     text-transform: uppercase;
-    margin-left: 25px;
-    width: 130px;
+    font-weight: 700;
+    width: 230px;
     padding: 20px;
+    color: #971400;
 
     background-image: linear-gradient(to right,
-            #54b3d6,
-            #54b3d6 50%,
-            #000 50%);
+            #D36214,
+            #D36214 50%,
+            #971400 50%);
 
     background-size: 200% 100%;
     background-position: -100%;
@@ -40,21 +75,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.article-btn:before {
-    content: '';
-    background: #54b3d6;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-}
 
 .article-btn:hover {
     background-position: 0;
-}
-
-.article-btn:hover::before {
-    width: 100%;
 }
