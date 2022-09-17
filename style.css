@@ -43,18 +43,22 @@ h4 {
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
-    overflow: hidden;
     object-fit: cover;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
-.impressum-content {
+.impressum-content,
+.contact-content {
     background-color: #DEEDCF;
     border-radius: 10px;
     -webkit-box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.5);
     padding: 20px;
+}
+
+.contact-title {
+    text-align: center;
 }
 
 .article-preview {
@@ -109,6 +113,7 @@ h4 {
 footer {
     width: 100%;
     background-color: #D36214;
+    margin-top: 20px;
 }
 
 .footer-inner {
@@ -135,4 +140,80 @@ footer {
 
 .footer-link+.footer-link {
     margin-left: 20px;
+}
+
+.gallery-item {
+    width: 400px;
+    padding: 5px;
+}
+
+.img-responsive {
+    width: 380px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destination {
+    text-align: center;
+    font-size: 24px;
+    color: #DEEDCF;
+}
+
+.article-content {
+    color: #DEEDCF;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+.contact-name {
+    margin-right: 25px;
+}
+
+.contact-input {
+    border-radius: 6px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #185c9b;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #D36214;
+    border-radius: 6px;
+    border: 2px solid #971400;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.contact-button:hover {
+    background-color: #971400;
 }

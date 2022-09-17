@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./dist/css/lightgallery.css" />
+
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="./dist/css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="./dist/css/lg-thumbnail.css" />
+
+
+    <!-- OR -->
+
+    <link type="text/css" rel="stylesheet" href="./dist/css/lightgallery-bundle.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="/index.html">
+                <h1>My travel pictures</h1>
+            </a>
+        </header>
+
+        <h2 class="destination">Europe</h2>
+        <!--  gallery -->
+        <div id="lightgallery">
+            <a href="./images/e01.jpeg" data-lg-size="1600-2400" class="gallery-item">
+                <img class="img-responsive" alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    src="./images/thumb_e01.jpeg" />
+            </a>
+            <a href="./images/e02.jpeg" data-lg-size="1024-800" class="gallery-item">
+                <img class="img-responsive" alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    src="./images/thumb_e02.jpeg" />
+            </a>
+            <a href="./images/e03.jpeg" data-lg-size="1024-800" class="gallery-item">
+                <img class="img-responsive" alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    src="./images/thumb_e03.jpeg" />
+            </a>
+            <a href="./images/e04.jpeg" data-lg-size="1024-800" class="gallery-item">
+                <img class="img-responsive" alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    src="./images/thumb_e04.jpeg" />
+            </a>
+            <a href="./images/e05.jpeg" data-lg-size="1024-800" class="gallery-item">
+                <img class="img-responsive" alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    src="./images/thumb_e05.jpeg" />
+            </a>
+            <a href="./images/e06.jpeg" data-lg-size="1024-800" class="gallery-item">
+                <img class="img-responsive" alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    src="./images/thumb_e06.jpeg" />
+            </a>
+        </div>
+        <!--  gallery -->
+
+        <!--  content -->
+        <p class="article-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consequatur
+            architecto, minima assumenda animi fugit veniam nam laboriosam ipsum voluptate, officiis voluptas dolor,
+            perferendis nostrum quia aut corporis excepturi quae.
+            Nulla suscipit voluptate assumenda asperiores cupiditate laboriosam magni aliquid, impedit animi. Qui
+            voluptas tenetur eum, praesentium expedita iste nostrum, doloribus eveniet ipsa non quo corporis, quae illum
+            molestias natus aperiam.
+            Eaque soluta deserunt consectetur, labore quia, distinctio ipsa voluptates dignissimos rem placeat autem cum
+            non possimus quod assumenda doloremque optio saepe, rerum voluptate. Aspernatur ullam dolore, voluptatem aut
+            necessitatibus numquam!
+            Consequuntur nesciunt repellat sed, ducimus ipsam nostrum quod quisquam unde ullam adipisci, quibusdam
+            minima a fugiat doloribus delectus molestias. Enim non illo expedita repellendus quaerat consequuntur,
+            aspernatur possimus mollitia deleniti.
+            Sunt enim illo qui, velit quibusdam voluptatum ipsum, debitis, provident vero unde fuga in eos tempora
+            perferendis suscipit possimus voluptatem? Itaque facere, porro nihil repellendus aperiam quidem sunt!
+            Repudiandae, non.</p>
+        <p class="article-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consequatur
+            architecto,
+            minima assumenda animi fugit veniam nam laboriosam ipsum voluptate, officiis voluptas dolor, perferendis
+            nostrum
+            quia aut corporis excepturi quae.
+            Nulla suscipit voluptate assumenda asperiores cupiditate laboriosam magni aliquid, impedit animi. Qui
+            voluptas
+            tenetur eum, praesentium expedita iste nostrum, doloribus eveniet ipsa non quo corporis, quae illum
+            molestias natus
+            aperiam.
+            Eaque soluta deserunt consectetur, labore quia, distinctio ipsa voluptates dignissimos rem placeat autem cum
+            non
+            possimus quod assumenda doloremque optio saepe, rerum voluptate. Aspernatur ullam dolore, voluptatem aut
+            necessitatibus numquam!
+            Consequuntur nesciunt repellat sed, ducimus ipsam nostrum quod quisquam unde ullam adipisci, quibusdam
+            minima a
+            fugiat doloribus delectus molestias. Enim non illo expedita repellendus quaerat consequuntur, aspernatur
+            possimus
+            mollitia deleniti.
+            Sunt enim illo qui, velit quibusdam voluptatum ipsum, debitis, provident vero unde fuga in eos tempora
+            perferendis
+            suscipit possimus voluptatem? Itaque facere, porro nihil repellendus aperiam quidem sunt! Repudiandae, non.
+        </p>
+        <!--  content -->
+    </div>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <p class="footer-copyright">The Traveling Pants &copy; 2022</p>
+                <div class="footer-links">
+                    <a class="footer-link" href="/contact.html">Countact us</a>
+                    <a class="footer-link" href="/impressum.html">Impressum</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- articles preview-->
+    </div>
+
+    <script src="./dist/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="./dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="./dist/plugins/zoom/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail],
+            thumbnail: true,
+            rowHeight: 180,
+            margins: 5
+        });
+    </script>
+</body>
+
+</html>
