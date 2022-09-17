@@ -111,3 +111,7 @@ footer {
 .footer-link:hover {
     color: #185c9b;
 }
+
+.footer-link+.footer-link{
+    margin-left: 20px;
+}
