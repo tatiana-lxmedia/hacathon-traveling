@@ -1,5 +1,52 @@
-.button {
-    padding: ;
-    border-style: hidden;
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:wght@300&display=swap');
+
+.wrapper {
+    width: 1200px;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+.continentImage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 25px;
+}
+.image-1 {
+    background-image: url(images/placeholder.jpg);
+}
+.image-2 {
+    background-image: url(images/asia.webp);
+}
+.image-3 {
+    background-image: url(images/north\ america.jpg);
+}
+.image-4 {
+    background-image: url(images/south\ america.jpg);
+}
+.image-5 {
+    background-image: url(images/australia.jpg);
+}
+.image-6 {
+    background-image: url(images/africa.jpg);
+}
+
+img {width: 100%;}
+h2 {position: absolute; 
+   text-align: center;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   margin: 0;
+   font-family: 'Dancing Script', cursive;
+   font-size: 80px;
+   color:white
+}
+
+
+
