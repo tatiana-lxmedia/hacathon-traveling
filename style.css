@@ -140,16 +140,49 @@ h4 {
     box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
-
+.impressum-title,
+.subpage-title {
+        text-align: center;
+            position: static;
+            color: #0A2F51;
+            left: 0;
+            top: 0;
+            transform: none;
+            font-size: 48px;
+            margin-bottom: 24px;
+}
+.subpage-title{
+color: #DEEDCF;
+}
 .contact-title {
     text-align: center;
+        position: static;
+        color: #0A2F51;
+        left: 0;
+        top: 0;
+        transform: none;
+        font-size: 48px;
+        margin-bottom: 24px;
 }
+
+.article-content {
+    padding: 20px 0;
+}
+.article-title{
+        color: #0A2F51;
+        margin-bottom: 16px;
+}
+.article-text{
+        color: #0A2F51;
+}
+
 
 .article-preview {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 300px auto 150px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #DEEDCF;
@@ -162,7 +195,6 @@ h4 {
     height: 200px;
     width: 300px;
     object-fit: cover;
-    margin-right: 25px;
 }
 
 img {width: 100%;}
@@ -255,6 +287,12 @@ footer {
     text-align: center;
     font-size: 24px;
     color: #DEEDCF;
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    font-size: 48px;
+    margin-bottom: 24px;
 }
 
 .article-content {
