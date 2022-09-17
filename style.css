@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+.article-preview {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.article-image {
+    width: 300px;
+    margin-right: 25px;
+}
+
+.article-content {
+    padding: 20px 0;
+}
+
+.article-btn {
+    align-self: end;
+    text-transform: uppercase;
+    margin-left: 25px;
+    width: 130px;
+    padding: 20px;
+
+    background-image: linear-gradient(to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #000 50%);
+
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.article-btn:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+}
+
+.article-btn:hover {
+    background-position: 0;
+}
+
+.article-btn:hover::before {
+    width: 100%;
+}
